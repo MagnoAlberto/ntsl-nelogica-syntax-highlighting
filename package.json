@@ -3,7 +3,7 @@
   "displayName": "Nelogica NTSL Language Support",
   "description": "Syntax highlighting, snippets, and language support for Nelogica Trading System Language (NTSL / Profit).",
   "version": "1.0.0",
-  "publisher": "d3trader",
+  "publisher": "MagnoAlberto",
   "engines": {
     "vscode": "^1.75.0"
   },
