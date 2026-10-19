@@ -1,0 +1,55 @@
+{
+  "name": "ntsl-nelogica-syntax-highlighting",
+  "displayName": "Nelogica NTSL Language Support",
+  "description": "Syntax highlighting, snippets, and language support for Nelogica Trading System Language (NTSL / Profit).",
+  "version": "1.0.0",
+  "publisher": "d3trader",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "ntsl",
+    "nelogica",
+    "profit",
+    "trading",
+    "pascal"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ntsl",
+        "aliases": [
+          "Nelogica NTSL",
+          "NTSL",
+          "ntsl"
+        ],
+        "extensions": [
+          ".ntsl",
+          ".nelogica"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ntsl",
+        "scopeName": "source.ntsl",
+        "path": "./syntaxes/ntsl.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ntsl",
+        "path": "./snippets/ntsl.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MagnoAlberto/ntsl-nelogica-syntax-highlighting"
+  }
+}

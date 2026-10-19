@@ -1,0 +1,106 @@
+{
+  "Input Block": {
+    "prefix": "input",
+    "body": [
+      "input",
+      "  ${1:Parametro}(${2:0});$0"
+    ],
+    "description": "Bloco de parâmetros de entrada (input)"
+  },
+  "Var Block": {
+    "prefix": "var",
+    "body": [
+      "var",
+      "  ${1:vVariavel} : ${2|Float,Integer,Boolean,String|};$0"
+    ],
+    "description": "Bloco de declaração de variáveis (var)"
+  },
+  "Begin End Block": {
+    "prefix": "begin",
+    "body": [
+      "begin",
+      "  $0",
+      "end;"
+    ],
+    "description": "Bloco de execução begin...end;"
+  },
+  "If Then Block": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condicao}) then",
+      "begin",
+      "  $0",
+      "end;"
+    ],
+    "description": "Estrutura condicional if...then begin...end"
+  },
+  "If Then Else Block": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condicao}) then",
+      "begin",
+      "  $2",
+      "end",
+      "else",
+      "begin",
+      "  $0",
+      "end;"
+    ],
+    "description": "Estrutura condicional if...then else"
+  },
+  "While Do Block": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condicao}) do",
+      "begin",
+      "  $0",
+      "end;"
+    ],
+    "description": "Laço while...do begin...end"
+  },
+  "For To Block": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} := ${2:1} to ${3:10} do",
+      "begin",
+      "  $0",
+      "end;"
+    ],
+    "description": "Laço for...to begin...end"
+  },
+  "LineSegment Nelogica": {
+    "prefix": "linesegment",
+    "body": [
+      "LineSegment(",
+      "  ${1:fPrecoInicio},",
+      "  ${2:fPrecoFim},",
+      "  ${3:nDataInicio},",
+      "  ${4:nDataFim},",
+      "  ${5:False},",
+      "  ${6:\"Texto\"},",
+      "  ${7|clAmarelo,clVerde,clVermelho,clAzul,clBranco|},",
+      "  ${8:2},",
+      "  ${9|psSolid,psDash,psDot|},",
+      "  ${10:9},",
+      "  ${11|tpTopRight,tpBottomRight,tpTopLeft,tpBottomLeft,tpCenter|},",
+      "  ${12:nHoraInicio},",
+      "  ${13:nHoraFim}",
+      ");$0"
+    ],
+    "description": "Desenha um segmento de reta (LineSegment)"
+  },
+  "Plot Nelogica": {
+    "prefix": "plot",
+    "body": [
+      "Plot(${1:Valor});$0"
+    ],
+    "description": "Plota valor no indicador"
+  },
+  "PaintBar Nelogica": {
+    "prefix": "paintbar",
+    "body": [
+      "PaintBar(${1|clVerde,clVermelho,clAmarelo,clAzul,clBranco|});$0"
+    ],
+    "description": "Colorir barra de candle (PaintBar)"
+  }
+}
